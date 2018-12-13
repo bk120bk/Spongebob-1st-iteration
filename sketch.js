@@ -1,7 +1,7 @@
 var num = 50;
 
 function setup() {
-	createCanvas(1800, 1000);
+	createCanvas(windowWidth, windowHeight);
 }
 function draw() {
 	background(0,100, 180);
@@ -142,4 +142,32 @@ function mouseReleased() {
 	strokeWeight(2)
 	noFill()
 	ellipse(850,250,40,80)
+}
+
+function mouseClicked() {
+strokeWeight(1)
+fill(208,122,220)
+ellipse(1400-num,60,120,90)
+line(1380-num,100,1380-num,140)
+line(1400-num,100,1400-num,140)
+line(1420-num,100,1420-num,140)
+strokeWeight(0)
+fill(144,53,159)
+ellipse(1405-num,62,20,17)
+ellipse(1360-num,73,17,15)
+ellipse(1430-num,58,17,22)
+
+
+strokeWeight(1)
+fill(208,122,220)
+ellipse(1400-num,500,120,90)
+line(1380-num,540,1380-num,580)
+line(1400-num,540,1400-num,580)
+line(1420-num,540,1420-num,580)
+strokeWeight(0)
+fill(144,53,159)
+ellipse(1405-num,502,20,17)
+ellipse(1360-num,513,17,15)
+ellipse(1430-num,498,17,22)
+num+=50
 }
